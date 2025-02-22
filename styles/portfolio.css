@@ -181,10 +181,25 @@ footer{
 }
 @media screen and (max-width:676px) {
     .skills-container, 
-    .resume-container, 
-    footer, 
+    .resume-container,
+    .banner, 
+    footer,
+    nav,
+    nav > ul, 
     .about-items{
         flex-direction: column;
+    }
+    .banner{
+        margin: 20px;
+    }
+    nav > ul{
+        gap: 10px;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+    .header{
+        background-image: none;
     }
     footer, .about{
         padding: 20px;
@@ -195,5 +210,14 @@ footer{
     footer input[type="text"], footer textarea{
         width: calc(100% - 40%);
     }
+    .banner-profile-pic{
+        width: 100%;
+    }
     
+}
+/* tablet spacefic media query */
+@media screen and (min-width:676px) and (max-width:1025px) {
+    .banner{
+        flex-direction: column;
+    }
 }
